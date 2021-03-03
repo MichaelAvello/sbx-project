@@ -53,9 +53,10 @@
   
 <body style="position: relative; min-height: 100%; top: 0px;">
 
+<!--
 <nav class="navbar navbar-inverse" id="dosbanner" role="navigation">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Brand and toggle get grouped for better mobile display 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dosMenu">
         <span class="sr-only">Toggle navigation</span>
@@ -64,7 +65,7 @@
       <a class="navbar-brand display-print" href="https://www.dos.myflorida.com/"><img src="./sbx_files/dos.logo.black-bg.png" class="img-responsive" alt="Florida Department of State" id="dosLogo"></a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Collect the nav links, forms, and other content for toggling 
     <div class="collapse navbar-collapse  hidden-print" id="dosMenu">
       <ul class="nav navbar-nav navbar-right">
 			<li><a href="https://www.dos.myflorida.com/sunbiz/" title="Division of Corporations website">Corporations</a></li>
@@ -73,12 +74,14 @@
 			<li><a href="https://www.dos.myflorida.com/historical/" title="Division of Historical Resources website">Historical Resources</a></li>
 			<li><a href="https://www.dos.myflorida.com/library-archives/" title="Division of Library and Information Services website">Library and Information Services</a></li>
 	    </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div><!-- /.navbar-collapse 
+  </div><!-- /.container-fluid 
 </nav>
+-->
 
-    <h1>Hello!</h1>
-	
+    <!-- <h1>Hello!</h1> -->
+
+<!--	
 <div id="content" class="content container">      
 
         
@@ -95,6 +98,7 @@
 	
 	</div>
 </div>
+-->
 
 <!-- mda: start of Toast Alert block -->
 <div id="content" class="content container">
@@ -117,7 +121,37 @@
   <img class="mySlides" src="./sbx_files/inland-surf-shop.png" style="width:100%">
 </div>
     
-	<h1>Data Downloads</h1>
+	<!-- <h1>Data Downloads</h1> -->
+	
+<!-- mda: script for proposed slideshow -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
     
 </body>
   
