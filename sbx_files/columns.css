@@ -1,0 +1,17 @@
+.AutoDivided3Columns {
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.AutoDivided3Columns {
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.AutoDivided4Columns {
+	-webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}

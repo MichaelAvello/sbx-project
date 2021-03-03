@@ -1,0 +1,49 @@
+/**umb_name:h2*/
+h2{}
+
+/**umb_name:h3*/
+h3 {}
+
+/**umb_name:h4*/
+h4 {}
+
+/**umb_name:h5*/
+h5 {}
+
+/**umb_name:h6*/
+h6 {}
+
+/**umb_name:.image-center*/
+.image-center {
+
+}
+
+/**umb_name:.image-left*/
+.image-left {
+
+    
+}
+/**umb_name:.image-right*/
+.image-right {
+
+}
+/**umb_name:.image-inline*/
+.image-inline {
+
+}
+/**umb_name:.image-embed*/
+.image-embed {
+
+}
+/**umb_name:.featured*/
+.featured {
+color:red;
+}
+/**umb_name:.more-link*/
+.more-link {
+text-align: right;
+}
+/**umb_name:.text-left*/
+.text-left {
+
+}
