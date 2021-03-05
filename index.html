@@ -36,7 +36,7 @@
 <link href="./sbx_files/doc.min.css" rel="stylesheet" type="text/css">
 
 <!-- mda: proposed slideshow style -->
-<link href="./sbx_files/w3.css" rel="stylesheet" type="text/css">
+<link href="./sbx_files/slidegallary.css" rel="stylesheet" type="text/css">
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <style>.mySlides {display:none}</style>
 
@@ -281,6 +281,72 @@ mda: slideshow v1 -->
 
 mda: slideshow v2 -->
 
+<!-- mda: slideshow x3
+<!-- Container for the image gallery -->
+<div class="sg-container">
+
+  <!-- Full-width images with number text -->
+  <div class="sg-mySlides">
+    <div class="sg-numbertext">1 / 6</div>
+      <img src="./sbx_files/sandbox_dd_x001.png" style="width:100%">
+  </div>
+
+  <div class="sg-mySlides">
+    <div class="sg-numbertext">2 / 6</div>
+      <img src="./sbx_files/sandbox_dd_x002.png" style="width:100%">
+  </div>
+
+  <div class="sg-mySlides">
+    <div class="sg-numbertext">3 / 6</div>
+      <img src="./sbx_files/sandbox_dd_x003.png" style="width:100%">
+  </div>
+
+  <div class="sg-mySlides">
+    <div class="sg-numbertext">4 / 6</div>
+      <img src="./sbx_files/sandbox_dd_x004.png" style="width:100%">
+  </div>
+
+  <div class="sg-mySlides">
+    <div class="sg-numbertext">5 / 6</div>
+      <img src="./sbx_files/1968-computer.jpg" style="width:100%">
+  </div>
+
+  <div class="sg-mySlides">
+    <div class="sg-numbertext">6 / 6</div>
+      <img src="./sbx_files/fl-flag-banner-clouds.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="sg-prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="sg-next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="sg-caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="sg-row">
+    <div class="sg-column">
+      <img class="sg-demo sg-cursor" src="./sbx_files/sandbox_dd_x001.png" style="width:100%" onclick="currentSlide(1)" alt="New User Login Page">
+    </div>
+    <div class="sg-column">
+      <img class="sg-demo sg-cursor" src="./sbx_files/sandbox_dd_x002.png" style="width:100%" onclick="currentSlide(2)" alt="New Landing Page">
+    </div>
+    <div class="sg-column">
+      <img class="sg-demo sg-cursor" src="./sbx_files/sandbox_dd_x003.png" style="width:100%" onclick="currentSlide(3)" alt="Public Data Downloads Page">
+    </div>
+    <div class="sg-column">
+      <img class="sg-demo sg-cursor" src="./sbx_files/sandbox_dd_x004.png" style="width:100%" onclick="currentSlide(4)" alt="Data Downloads with Search Results">
+    </div>
+    <div class="sg-column">
+      <img class="sg-demo sg-cursor" src="./sbx_files/1968-computer.jpg" style="width:100%" onclick="currentSlide(5)" alt="Placeholder Image">
+    </div>
+    <div class="sg-column">
+      <img class="sg-demo sg-cursor" src="./sbx_files/fl-flag-banner-clouds.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sunbiz.org">
+    </div>
+  </div>
+</div>
 
 
 <!-- mda: end of proposed slideshow -->
