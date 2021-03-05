@@ -282,7 +282,7 @@ mda: slideshow v1 -->
 mda: slideshow v2 -->
 
 <!-- mda: slideshow x3
-<!-- Container for the image gallery -->
+<!-- Container for the image gallery 
 <div class="sg-container">
 
 <div class="w3-container">
@@ -290,7 +290,7 @@ mda: slideshow v2 -->
   <p>Scroll through the following images to get a preview of what's in the works for Sunbiz Data Downloads.</p>
 </div>
 
-  <!-- Full-width images with number text -->
+  <!-- Full-width images with number text 
   <div class="sg-mySlides">
     <div class="sg-numbertext">1 / 4</div>
       <img src="./sbx_files/sandbox_dd_x001.png" style="width:100%">
@@ -312,16 +312,16 @@ mda: slideshow v2 -->
   </div>
 
 
-  <!-- Next and previous buttons -->
+  <!-- Next and previous buttons 
   <a class="sg-prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="sg-next" onclick="plusSlides(1)">&#10095;</a>
 
-  <!-- Image text -->
+  <!-- Image text 
   <div class="sg-caption-container">
     <p id="caption"></p>
   </div>
 
-  <!-- Thumbnail images -->
+  <!-- Thumbnail images 
   <div class="sg-row">
     <div class="sg-column">
       <img class="sg-demo sg-cursor" src="./sbx_files/sandbox_dd_x001.png" style="width:100%" onclick="currentSlide(1)" alt="New User Login Page">
@@ -337,7 +337,50 @@ mda: slideshow v2 -->
     </div>
   </div>
 </div>
+-->
 
+<!-- mda: slideshow x3 -->
+<!-- Slideshow container -->
+<div class="sg-slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="sg-mySlides sg-fade">
+    <div class="sg-numbertext">1 / 4</div>
+    <img src="./sbx_files/sandbox_dd_x001.png" style="width:100%">
+    <div class="sg-text">New Sunbiz User Login</div>
+  </div>
+
+  <div class="sg-mySlides sg-fade">
+    <div class="sg-numbertext">2 / 4</div>
+    <img src="./sbx_files/sandbox_dd_x002.png" style="width:100%">
+    <div class="sg-text">New Sunbiz Landing Page</div>
+  </div>
+
+  <div class="sg-mySlides sg-fade">
+    <div class="sg-numbertext">3 / 4</div>
+    <img src="./sbx_files/sandbox_dd_x003.png" style="width:100%">
+    <div class="sg-text">New Sunbiz Data Downloads Page</div>
+  </div>
+  
+  <div class="sg-mySlides sg-fade">
+    <div class="sg-numbertext">3 / 4</div>
+    <img src="./sbx_files/sandbox_dd_x004.png" style="width:100%">
+    <div class="sg-text">New Sunbiz Data Downloads Page with Search Results</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="sg-prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="sg-next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="sg-dot" onclick="currentSlide(1)"></span>
+  <span class="sg-dot" onclick="currentSlide(2)"></span>
+  <span class="sg-dot" onclick="currentSlide(3)"></span>
+  <span class="sg-dot" onclick="currentSlide(4)"></span>
+</div>
 
 <!-- mda: end of proposed slideshow -->
  
@@ -431,7 +474,41 @@ automatically in just a few seconds.
 <!-- modernizer loads, custom stuff and initializations -->
 <script src="./sbx_files/dos.min.js.download"></script> 
 
-<!-- mda: script for proposed slideshow -->
+
+<!-- mda: script for slideshow x3 -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("sg-mySlides");
+  var dots = document.getElementsByClassName("sg-dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" sg-active", "");
+  }
+  slides[slideIndex-1].style.display = "sg-block";
+  dots[slideIndex-1].className += " sg-active";
+}
+</script>
+
+
+<!-- mda: script for slideshow x3 
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -464,6 +541,7 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+-->
 
 <!-- script for slideshow x1, x2:
 <script type="text/javascript">
