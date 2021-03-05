@@ -341,45 +341,45 @@ mda: slideshow v2 -->
 
 <!-- mda: slideshow x3 -->
 <!-- Slideshow container -->
-<div class="sg-slideshow-container">
+<div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="sg-mySlides sg-fade">
-    <div class="sg-numbertext">1 / 4</div>
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
     <img src="./sbx_files/sandbox_dd_x001.png" style="width:100%">
-    <div class="sg-text">New Sunbiz User Login</div>
+    <div class="text">New Sunbiz User Login</div>
   </div>
 
-  <div class="sg-mySlides sg-fade">
-    <div class="sg-numbertext">2 / 4</div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
     <img src="./sbx_files/sandbox_dd_x002.png" style="width:100%">
-    <div class="sg-text">New Sunbiz Landing Page</div>
+    <div class="text">New Sunbiz Landing Page</div>
   </div>
 
-  <div class="sg-mySlides sg-fade">
-    <div class="sg-numbertext">3 / 4</div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
     <img src="./sbx_files/sandbox_dd_x003.png" style="width:100%">
-    <div class="sg-text">New Sunbiz Data Downloads Page</div>
+    <div class="text">New Sunbiz Data Downloads Page</div>
   </div>
   
-  <div class="sg-mySlides sg-fade">
-    <div class="sg-numbertext">3 / 4</div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
     <img src="./sbx_files/sandbox_dd_x004.png" style="width:100%">
-    <div class="sg-text">New Sunbiz Data Downloads Page with Search Results</div>
+    <div class="text">New Sunbiz Data Downloads Page with Search Results</div>
   </div>
 
   <!-- Next and previous buttons -->
-  <a class="sg-prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="sg-next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
 <!-- dots/circles -->
 <div style="text-align:center">
-  <span class="sg-dot" onclick="currentSlide(1)"></span>
-  <span class="sg-dot" onclick="currentSlide(2)"></span>
-  <span class="sg-dot" onclick="currentSlide(3)"></span>
-  <span class="sg-dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 
 <!-- mda: end of proposed slideshow -->
@@ -492,18 +492,18 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("sg-mySlides");
-  var dots = document.getElementsByClassName("sg-dot");
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" sg-active", "");
+      dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "sg-block";
-  dots[slideIndex-1].className += " sg-active";
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
 </script>
 
