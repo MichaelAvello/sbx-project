@@ -108,6 +108,11 @@ img {
   to {opacity: 1}
 }
 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .sg-prev, .sg-next,.sg-text {font-size: 11px}
+}
+
 
 /* CSS for sliceshow x3:
 /* Position the image container (needed to position the left and right arrows) 
