@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* prepend 'sg-' to class/div names */
+/* prepend 'sg-' to class names */
 
 /* Position the image container (needed to position the left and right arrows) */
 .sg-container {
