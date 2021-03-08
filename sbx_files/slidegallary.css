@@ -54,7 +54,18 @@ img {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+/* Bottom right caption text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Centered caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
