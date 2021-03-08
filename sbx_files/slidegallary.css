@@ -84,6 +84,7 @@ img {
   padding: 32px 12px;
   text-align: right;
   position: absolute;
+  background-color: black;
   top: 0;
 }
 
