@@ -17,16 +17,17 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
+  max-width: auto;
+  height: 600px
   position: relative;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
-  max-width: auto;
-  height: 100%;
+  /* max-width: auto;
+  height: 100%; */
 }
 
 /* Next & previous buttons */
