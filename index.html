@@ -351,32 +351,39 @@ mda: slideshow v2 -->
   <!-- Full-width images with number and caption text -->
   <div class="mySlides">
     <div class="numbertext-block">1 / 4</div>
-    <img src="./sbx_files/sunbiz-login-001.jpeg" style="width:100%">
-    <div class="caption-container">New Sunbiz User Login</div>
+    <img src="./sbx_files/sunbiz-login-001.jpeg" style="width:100%" onclick="currentSlide(1)" alt="New Sunbiz User Login">
+    <!-- <div class="text-block">New Sunbiz User Login</div> -->
   </div>
 
   <div class="mySlides">
     <div class="numbertext-block">2 / 4</div>
-    <img src="./sbx_files/sunbiz-landing-page-001.jpg" style="width:100%">
-    <div class="caption-container">New Sunbiz Landing Page</div>
+    <img src="./sbx_files/sunbiz-landing-page-001.jpg" style="width:100%" onclick="currentSlide(2)" alt="New Sunbiz Landing Page">
+    <!-- <div class="text-block">New Sunbiz Landing Page</div> -->
   </div>
 
   <div class="mySlides">
     <div class="numbertext-block">3 / 4</div>
-    <img src="./sbx_files/sunbiz-data-downloads-001.jpeg" style="width:100%">
-    <div class="caption-container">New Sunbiz Data Downloads Page</div>
+    <img src="./sbx_files/sunbiz-data-downloads-001.jpeg" style="width:100%" onclick="currentSlide(3)" alt="New Sunbiz Data Downloads Page">
+    <!-- <div class="text-block">New Sunbiz Data Downloads Page</div> -->
   </div>
   
   <div class="mySlides">
     <div class="numbertext-block">4 / 4</div>
-    <img src="./sbx_files/sunbiz-data-downloads-002.jpg" style="width:100%">
-    <div class="caption-container">New Sunbiz Data Downloads Page with Search Results</div>
+    <img src="./sbx_files/sunbiz-data-downloads-002.jpg" style="width:100%" onclick="currentSlide(4)" alt="New Sunbiz Data Downloads Page with Search Results">
+    <!-- <div class="text-block">New Sunbiz Data Downloads Page with Search Results</div> -->
   </div>
 
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  
 </div>
+
 <br>
 
 <!-- dots/circles -->
@@ -479,8 +486,42 @@ automatically in just a few seconds.
 <!-- modernizer loads, custom stuff and initializations -->
 <script src="./sbx_files/dos.min.js.download"></script> 
 
+<!-- mda: script for slideshow x3 v2 -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-<!-- mda: script for slideshow x3 -->
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<!-- mda: script for slideshow x3 v1
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -511,7 +552,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
+-->
 
 <!-- mda: script for slideshow x3 
 <script>
