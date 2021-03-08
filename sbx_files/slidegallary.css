@@ -71,8 +71,8 @@ img {
 
 .numbertext-block {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  right: 00px;
   background-color: black;
   color: white;
   padding-left: 20px;
