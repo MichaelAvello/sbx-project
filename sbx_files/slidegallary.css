@@ -59,7 +59,8 @@ img {
 .text-block {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  margin: 0px auto;
+  /* right: 20px; */
   background-color: black;
   color: white;
   padding-left: 20px;
