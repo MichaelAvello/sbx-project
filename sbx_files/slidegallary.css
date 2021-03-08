@@ -71,6 +71,7 @@ img {
   font-size: 14px;
   font-weight: bold;
   padding: 32px 12px;
+  text-align: right;
   position: absolute;
   top: 0;
 }
