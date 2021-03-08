@@ -72,7 +72,7 @@ img {
   font-weight: bold;
   padding: 32px 12px;
   text-align: right;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
 }
 
