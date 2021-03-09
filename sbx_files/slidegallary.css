@@ -16,6 +16,11 @@ img {
 	margin: 0 auto;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
