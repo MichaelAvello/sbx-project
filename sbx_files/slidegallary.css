@@ -10,16 +10,26 @@
 /* CSS for sliceshow x3 */
 * {box-sizing:border-box}
 
+/*
 img {
 	border-style: none
 	vertical-align: middle;
 	margin: 0 auto;
 }
+*/
 
 /* Responsive for images */
 .responsive {
   width: 100%;
   height: auto;
+}
+
+/* Center images */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* Slideshow container */
