@@ -20,8 +20,13 @@ img {
 
 /* Responsive for images */
 .responsive {
-  width: 100%;
+  width: 80%;
   height: auto;
+}
+
+/* Change mouse pointer */
+.pointer {
+  cursor: pointer;
 }
 
 /* Center images */
