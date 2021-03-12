@@ -76,6 +76,21 @@ button:hover, a:hover {
     opacity: 0.7;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
+.title {
+    background-color: #f2f2f2;
+    color: #666666;
+    font-size: 16px;
+    border: thin;
+    border-color: #d9d9d9;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
