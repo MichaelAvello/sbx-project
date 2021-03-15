@@ -437,24 +437,7 @@ mda: slideshow v2 -->
       <div class="card">
         <img src="./sbx_files/sunbiz-login-001.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity pointer" alt="The new Sunbiz.org site will require all users to have a login ID and password.">
         <div class="title"><p>New Sunbiz User Login</p></div>
-        <div><button onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-info-circle w3-hover-opacity" style="font-size:36px;color:#666666;"></i></a></button></div>
-		
-		<div id="id01" class="w3-modal">
-			<div class="w3-modal-content w3-animate-opacity w3-card-4">
-				<header class="w3-container w3-blue"> 
-					<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<h2>New Sunbiz User Login</h2>
-				</header>
-					<div class="w3-container">
-						<p>The new Sunbiz.org site will require all users to have a user ID and password.</p>
-						<p>Each user will have their a unique profile for keeping track of their tasks and filings.</p>
-					</div>
-				<footer class="w3-container w3-blue">
-					<p><small>Copyright © 2021 State of Florida, Florida Department of State.</small></p>
-				</footer>
-			</div>
-		</div>
-				
+        <div><button><a href="https://www.dos.myflorida.com/sunbiz/" target="_blank" rel="noopener noreferrer"><i class="fa fa-info-circle w3-hover-opacity" style="font-size:36px;color:#666666;"></i></a></button></div>	
       </div>  
     </div>
 
@@ -462,24 +445,7 @@ mda: slideshow v2 -->
       <div class="card">
         <img src="./sbx_files/sunbiz-landing-page-001.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity pointer" alt="Once logged in, users will be taken to a new landing page with user-specific tasks, notifications, dashboard information, etc.">
         <div class="title"><p>New Landing Page</p></div>
-        <div><button onclick="document.getElementById('id02').style.display='block'"><i class="fa fa-info-circle w3-hover-opacity" style="font-size:36px;color:#666666;"></i></a></button></div>
-		
-		<div id="id02" class="w3-modal">
-			<div class="w3-modal-content w3-animate-opacity w3-card-4">
-				<header class="w3-container w3-blue"> 
-					<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-					<h2>New Landing Page</h2>
-				</header>
-					<div class="w3-container">
-						<p>Once logged in, users will be taken to a new landing page with user-specific tasks, notifications, dashboard information, etc.</p>
-						<p>Links to standard business filing workflows can be found in the vertical navigation menu on the left.</p>
-					</div>
-				<footer class="w3-container w3-blue">
-					<p><small>Copyright © 2021 State of Florida, Florida Department of State.</small></p>
-				</footer>
-			</div>
-		</div>	
-		
+        <div><button><a href="https://www.dos.myflorida.com/sunbiz/" target="_blank" rel="noopener noreferrer"><i class="fa fa-info-circle w3-hover-opacity" style="font-size:36px;color:#666666;"></i></a></button></div>
       </div>    
     </div>
 
@@ -734,22 +700,6 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
-}
-</script>
-
-<!-- Modal Information Boxes -->
-<script> 
-// Box 1
-var modal = document.getElementById('id01');
-
-// Box 2
-var modal = document.getElementById('id02');
-
-// When the user clicks anywhere outside of the modal, close it.
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
 }
 </script>
 
