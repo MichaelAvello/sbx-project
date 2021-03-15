@@ -462,12 +462,12 @@ mda: slideshow v2 -->
       <div class="card">
         <img src="./sbx_files/sunbiz-landing-page-001.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity pointer" alt="Once logged in, users will be taken to a new landing page with user-specific tasks, notifications, dashboard information, etc.">
         <div class="title"><p>New Landing Page</p></div>
-        <div><button onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-info-circle w3-hover-opacity" style="font-size:36px;color:#666666;"></i></a></button></div>
+        <div><button onclick="document.getElementById('id02').style.display='block'"><i class="fa fa-info-circle w3-hover-opacity" style="font-size:36px;color:#666666;"></i></a></button></div>
 		
-		<div id="id01" class="w3-modal">
+		<div id="id02" class="w3-modal">
 			<div class="w3-modal-content w3-animate-opacity w3-card-4">
 				<header class="w3-container w3-blue"> 
-					<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+					<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
 					<h2>New Landing Page</h2>
 				</header>
 					<div class="w3-container">
@@ -737,10 +737,16 @@ function onClick(element) {
 }
 </script>
 
-<script> // Modal Information Boxes
+<!-- Modal Information Boxes -->
+<script> // Box 1
 var modal = document.getElementById('id01');
+</script>
 
-// When the user clicks anywhere outside of the modal, close it
+<script> // Box 2
+var modal = document.getElementById('id02');
+</script>
+
+<script> // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
